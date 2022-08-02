@@ -1,11 +1,14 @@
 module.exports = function check(str, bracketsConfig) {
 
-  const OPEN_BRACKETS = ['[', '{', '|', 'Number', '('];
-  const PALINDROM = ['|', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  const OPEN_BRACKETS = ['[', '{', '|', '1', '(', '3', '5'];
+  const PALINDROM = ['|', '7', '8'];
   const BRACKET_PAIR = {
     [')']: '(',
     [']']: '[',
     ['}']: '{',
+    ['2']: '1',
+    ['4']: '3',
+    ['6']: '5',
   };
 
     let stack = [];
